@@ -1,1 +1,2 @@
-region = "us-west1"
+region   = "us-west1"
+VPC_Name = "terraform-vpc"
