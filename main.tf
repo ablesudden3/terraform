@@ -1,4 +1,4 @@
-resource "google_storage_bucket" "todays_bucket"{
+resource "google_storage_bucket" "todays_bucket" {
 
   name          = "1st_oct_2020_dahg"
   location      = var.region
