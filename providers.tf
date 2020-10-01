@@ -6,8 +6,9 @@ provider "google" {
 
 terraform {
   backend "gcs" {
-    bucket      = "asdk-123"
+    bucket      = "credentials-home-test-226111"
     prefix      = "demo"
     credentials = "account.json"
   }
 }
+
