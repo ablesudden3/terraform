@@ -1,11 +1,8 @@
-resource "google_storage_bucket" "todays_bucket" {
+module "gcp_bucket" {
 
-  name          = "1st_oct_2020_dahg"
-  location      = var.region
-  force_destroy = true
-
-
-
+  source = "./modules/GCS/"
+  region = var.region
+  
 }
 
 
