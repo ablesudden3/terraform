@@ -18,6 +18,7 @@ module "Subnets_for_VPC" {
   source   = "./modules/VPC/subnets"
   region   = var.region
   VPC_Name = var.VPC_Name
+  IP_Range = var.IP_Range
 }
 
 

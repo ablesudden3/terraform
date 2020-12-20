@@ -6,4 +6,7 @@ variable "VPC_Name" {
   description = "Name of the VPC"
 }
 
-
+variable "IP_Range" {
+   description = "Range of the IP"
+  
+}
