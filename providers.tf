@@ -1,14 +1,14 @@
 provider "google" {
-  credentials = file("account.json")
   project     = "home-test-226111"
   region      = var.region
+  credentials = file("${path.module}/secrets/account.json")
 }
 
 terraform {
   backend "gcs" {
     bucket      = "credentials-home-test-226111"
     prefix      = "demo"
-    credentials = "account.json"
+    credentials = "./secrets/account.json"
   }
 }
 
