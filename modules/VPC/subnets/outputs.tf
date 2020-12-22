@@ -4,3 +4,4 @@ output "subnet_name" {
   sensitive   = false
   description = "Subnet name"
 }
+
