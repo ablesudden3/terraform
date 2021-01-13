@@ -9,7 +9,6 @@ terraform {
   backend "gcs" {
     bucket      = "credentials-home-test-226111"
     prefix      = "demo"
-    credentials = "./secrets/account.json"
-  }
+     }
 }
 
