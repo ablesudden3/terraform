@@ -3,7 +3,7 @@ pipeline {
   tools {
   terraform 'terrafrom 14'
   environment {
-  GCP_Login = credentials('GCP_Login')
+  GCP_KEY = credentials('GCP_Login')
 }
 
 }
