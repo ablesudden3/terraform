@@ -1,15 +1,14 @@
 pipeline {
   agent any
+  tools {
+  terraform 'terrafrom 14'
+}
+
   stages{
-    stage('Terraform init') {
+    stage('Terraform init'){
       steps{
-        sh "terraform init"
+        bat "terraform init"
       }
-    }
-    stage('Terraform plan') {
-      steps{
-        sh "terraform plan"
-      }
-    }
+    }  
   }
 }
