@@ -2,6 +2,10 @@ pipeline {
   agent any
   tools {
   terraform 'terrafrom 14'
+  environment {
+  GCP_Login = credentials('GCP_Login')
+}
+
 }
 
   stages{
