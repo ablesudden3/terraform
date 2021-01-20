@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-    GOOGLE_APPLICATION_CREDENTIALS = credentials('home-test-226111')
+    GOOGLE_APPLICATION_CREDENTIALS = credentials('GCP_Login')
 }
   tools {
   terraform 'terrafrom 14'
