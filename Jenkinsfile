@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-  GOOGLE_CLOUD_KEYFILE_JSON = 'GCP_login'
+  GOOGLE_CLOUD_KEYFILE_JSON = 'account.json'
 }
   tools {
   terraform 'terrafrom 14'
