@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-  GOOGLE_CLOUD_KEYFILE_JSON = 'home-test-226111'
+  GOOGLE_APPLICATION_CREDENTIALS = 'home-test-226111'
 }
   tools {
   terraform 'terrafrom 14'
